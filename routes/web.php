@@ -13,5 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [RegisterController::class, 'showform']);
-});
+Route::get('/', function () {
+    return view('pages.index');
+})->name('showform');
