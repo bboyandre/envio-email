@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('pages.login');
+})->name('loginForm');
+
+Route::get('/daily-m3', function () {
     return view('pages.index');
-})->name('showform');
+})->name('dailyForm');

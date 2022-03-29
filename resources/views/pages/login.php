@@ -12,26 +12,19 @@
 
         </header>
         <section class="container">
-            <form class="row justify-content-center align-itens-center">
+            <div class="row justify-content-center align-itens-center">
                 <div class="col-12 col-md-8 p-3 mt-5 border rounded">
                     <h1 class="text-center">
-                        Daily M3
+                        Login
                     </h1>
                     <div class="mb-3 row justify-content-center align-itens-center">
                         <div class="col-12 col-md-10">
-                            <input type="email" class="form-control" id="staticEmail" placeholder="E-mail" value="email">
-                        </div>
-                    </div>
-                    <div class="mb-3 row justify-content-center align-itens-center">
-                        <div class="col-12 col-md-10">
                             <input type="text" class="form-control" id="staticEmail" placeholder="E-mail">
-                            <i class="fa-solid fa-circle-plus"></i>
                         </div>
                     </div>
                     <div class="mb-3 row justify-content-center align-itens-center">
                         <div class="col-12 col-md-10">
-                            <label for="validationTextarea" class="form-label">Textarea</label>
-                            <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                            <input type="password" class="form-control" id="inputPassword" placeholder="Senha">
                         </div>
                     </div>
                     <div class="mb-3 row justify-content-center align-itens-center">
@@ -40,7 +33,7 @@
                         </div>
                     </div>
                 </div>
-            </form>
+            </div>
         </section>
     </body>
 </html>
