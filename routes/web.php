@@ -13,10 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/login', function () {
     return view('pages.login');
 })->name('loginForm');
 
-Route::get('/daily-m3', function () {
+Route::get('/', function () {
     return view('pages.index');
 })->name('dailyForm');
+
+Route::post('/leads', 'App\Http\Controllers\LeadsActionController@leads')->name('leads');

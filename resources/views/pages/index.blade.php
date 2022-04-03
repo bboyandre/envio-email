@@ -8,35 +8,31 @@
         <title>Daily M3</title>
     </head>
     <body>
-        <header class="container">
+        {{-- <header class="container">
 
-        </header>
+        </header> --}}
         <section class="container">
-            <form class="row justify-content-center align-itens-center">
+            <form class="row justify-content-center align-itens-center" action="/leads" method="POST">
+                <input type="hidden" value={`${csrf}`} name="_token" />
                 <div class="col-12 col-md-8 p-3 mt-5 border rounded">
                     <h1 class="text-center">
                         Daily M3
                     </h1>
                     <div class="mb-3 row justify-content-center align-itens-center">
                         <div class="col-12 col-md-10">
-                            <input type="email" class="form-control" id="staticEmail" placeholder="E-mail" value="email">
-                        </div>
-                    </div>
-                    <div class="mb-3 row justify-content-center align-itens-center">
-                        <div class="col-12 col-md-10">
-                            <input type="text" class="form-control" id="staticEmail" placeholder="E-mail">
+                            <input type="text" class="form-control" id="staticEmail" name="nome" placeholder="Nome" required>
                             <i class="fa-solid fa-circle-plus"></i>
                         </div>
                     </div>
                     <div class="mb-3 row justify-content-center align-itens-center">
                         <div class="col-12 col-md-10">
                             <label for="validationTextarea" class="form-label">Textarea</label>
-                            <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                            <textarea class="form-control" id="validationTextarea" placeholder="Tarefas" name="tarefas" required></textarea>
                         </div>
                     </div>
                     <div class="mb-3 row justify-content-center align-itens-center">
                         <div class="col-12 col-md-10">
-                            <input type="button" class="col-12 btn btn-primary" value="Submit">
+                            <button type="submit" class="col-12 btn btn-primary">Submit</button>
                         </div>
                     </div>
                 </div>
