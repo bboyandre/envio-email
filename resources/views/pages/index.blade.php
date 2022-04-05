@@ -20,19 +20,35 @@
                     </h1>
                     <div class="mb-3 row justify-content-center align-itens-center">
                         <div class="col-12 col-md-10">
-                            <input type="text" class="form-control" id="staticEmail" name="nome" placeholder="Nome" required>
+                            <input type="text" class="form-control" id="staticEmail" name="nome" placeholder="Cód. Tarefa" required>
                             <i class="fa-solid fa-circle-plus"></i>
                         </div>
                     </div>
                     <div class="mb-3 row justify-content-center align-itens-center">
                         <div class="col-12 col-md-10">
-                            <label for="validationTextarea" class="form-label">Textarea</label>
+                            <input type="text" class="form-control" id="staticEmail" name="nome" placeholder="Título" required>
+                            <i class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </div>
+                    <div class="mb-3 row justify-content-center align-itens-center">
+                        <div class="col-12 col-md-10">
+                            <label class="form-label" for="status">Status da tarefa</label>
+                            <select name="" id="">
+                                <option value="pend">Pendente</option>
+                                <option value="conc">Concluída</option>
+                                <option value="start">A Iniciar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-3 row justify-content-center align-itens-center">
+                        <div class="col-12 col-md-10">
+                            <label for="validationTextarea" class="form-label">Comentários</label>
                             <textarea class="form-control" id="validationTextarea" placeholder="Tarefas" name="tarefas" required></textarea>
                         </div>
                     </div>
                     <div class="mb-3 row justify-content-center align-itens-center">
                         <div class="col-12 col-md-10">
-                            <button type="submit" class="col-12 btn btn-primary">Submit</button>
+                            <button type="submit" class="col-12 btn btn-primary">Salvar</button>
                         </div>
                     </div>
                 </div>
