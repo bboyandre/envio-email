@@ -8,7 +8,6 @@ class RegisterController extends Controller
 {
     public function loginForm()
     {
-        return view('pages.login')
+        return view('pages.login');
     }
-
 }
